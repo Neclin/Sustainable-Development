@@ -1,0 +1,100 @@
+:root {
+  --page-colour: rgb(206, 77, 77)
+}
+
+.primary-data {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.primary-data img {
+  width: 40%;
+  height: auto;
+}
+
+.primary-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px;
+
+  width: 40%;
+  height: 100%;
+
+  border: 1px solid black;
+}
+
+.slideshow {
+  width: 80%;
+  height: 40vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.slideshow button {
+  height: 50px;
+  width: 30px;
+}
+
+.slide {
+  background-color: var(--page-colour);
+  flex: 1;
+  height: 80%;
+  margin: 0px 15px;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 20px;
+}
+
+.slide h1 {
+  text-align: top;
+}
+
+.slide p {
+  height: 80%;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 100%;
+
+  border-radius: 15px;
+}
+
+.targets {
+  width: 80%;
+  height: 50vh;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.target {
+  background-color: var(--page-colour);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.target p {
+  height: 70%;
+}
+

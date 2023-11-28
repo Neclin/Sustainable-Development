@@ -1,0 +1,56 @@
+.parallax-element {
+  /* Set a specific height */
+  min-height: 700px ;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 75%;
+
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-1 {
+  background-image: url("images/education.jpg");
+}
+
+.img-2 {
+  background-image: url("images/energy.jpg");
+}
+
+.img-3 {
+  background-image: url("images/water.jpg");
+}
+
+.goal-title {
+  background-color: #111;
+  height: 50px;
+  padding: 10px 15px 0 15px;
+  border-radius: 15px;
+}
+
+.goal-title a {
+  color: whitesmoke;
+}
+
+.goal-info {
+  width: 90%;
+  background-color: white;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.goal-info li{
+  margin-left: 20px;
+}

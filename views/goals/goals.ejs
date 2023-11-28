@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= locals.title %></title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/goals.css">
+  <script src="/goals.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-element"><a href="/"> Home </a></li>
+      <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
+      <li class="nav-element"> <a href="../team"> Team </a></li>
+      <li class="dropdown">
+        <button class="nav-element dropdown-btn"> Pages </button>
+        <ul class="dropdown-content">
+          <li><a href="1"> Quality Education </a></li>
+          <li><a href="2"> Affordable & Clean Energy </a></li>
+          <li><a href="3"> Life Below Water </a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <article class="primary-data">
+      <img class src="/<%= locals.imgURL %>" alt="<%= locals.imgAlt %>">
+      <div class="primary-text-container">
+        <div>
+          <h2>Overview:</h2>
+          <p><%= locals.overview %></p>
+        </div>
+        <div>
+          <h2>Why this is important:</h2>
+          <p><%= locals.important %></p>
+        </div>
+      </div>
+    </article>
+    <article class="slideshow">
+      <button class="slideshow-left" onclick="changeSlides(-1)">&#10094;</button>
+      <% if (locals.slides) { %>
+        <% locals.slides.forEach(slide => { %>
+          <div class="slide">
+            <h1> Title <%= slide.title %> </h1>
+            <p> <%= slide.content %> </p>
+          </div>
+        <% }) %>
+      <% } %>
+      <button class="slideshowright" onclick="changeSlides(+1)">&#10095;</button>
+    </article>
+    <article class="targets">
+      <% if (locals.targets) { %>
+        <% locals.targets.forEach(target => { %>
+          <div class="target">
+            <h1> Title <%= target.title %> </h1>
+            <p> <%= target.content %> </p>
+          </div>
+        <% }) %>
+      <% } %>
+    </article>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
