@@ -1,7 +1,3 @@
-:root {
-  --page-colour: rgb(206, 77, 77)
-}
-
 .primary-data {
   display: flex;
   align-items: top;

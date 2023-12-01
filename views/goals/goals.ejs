@@ -6,7 +6,12 @@
   <title><%= locals.title %></title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/goals.css">
-  <script src="/goals.js" defer></script>
+  <style>
+    :root {
+      --page-colour: <%= locals.pageColour %>
+    }
+    </style>
+    <script src="/goals.js" defer></script>
 </head>
 <body>
   <nav>

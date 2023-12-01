@@ -6,6 +6,7 @@
     "description": "This is the Quality Education page",
     "overview": "Here is an overview of the Quality Education page",
     "important": "This why Quality Education is important",
+    "pageColour":"rgb(206, 77, 77)",
     "slides": [
       {
         "title": "Slide 1",
@@ -45,7 +46,40 @@
     "imgAlt": "Affordable and Clean Energy",
     "description": "This is the Affordable and Clean Energy page",
     "overview": "Here is an overview of the Affordable and Clean Energy page",
-    "important": "This why Affordable and Clean Energy is important"
+    "important": "This why Affordable and Clean Energy is important",
+    "pageColour":"rgb(137, 207, 240)",
+    "slides": [
+      {
+        "title": "Slide 1",
+        "content": "This is slide 1"
+      },
+      {
+        "title": "Slide 2",
+        "content": "This is slide 2"
+      },
+      {
+        "title": "Slide 3",
+        "content": "This is slide 3"
+      }
+    ],
+    "targets": [
+      {
+        "title": "Target 1",
+        "content": "This is target 1"
+      },
+      {
+        "title": "Target 2",
+        "content": "This is target 2"
+      },
+      {
+        "title": "Target 3",
+        "content": "This is target 3"
+      },
+      {
+        "title": "Target 4",
+        "content": "This is target 4"
+      }
+    ]
   },
   {
     "title": "Life Below Water",
