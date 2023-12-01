@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="Signup.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="Signup.js"></script>
+    <script src="client.js"></script>
+    <title>Signup</title>
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-element"><a href="/"> Home </a></li>
+      <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
+      <li class="nav-element"> <a href="../team"> Team </a></li>
+      <li class="dropdown">
+        <button class="nav-element dropdown-btn"> Pages </button>
+        <ul class="dropdown-content">
+          <li><a href="1"> Quality Education </a></li>
+          <li><a href="2"> Affordable & Clean Energy </a></li>
+          <li><a href="3"> Life Below Water </a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    <main>
+        <div id="wrapper">
+        <h3>Sign up for our newsletter</h3>
+        <div class="formDiv">
+            <p>required information is marked with an asterisk (*)</p>
+            <form action="" method="post" id="form">
+                <fieldset>
+                    <legend>Sign up: </legend>
+
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter here" required>
+                    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter here" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@domain.com" required>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea name="comments" id="comments" placeholder="Enter any additional comments..."></textarea>
+
+                    <button id="submit" type="submit">Confirm</button>
+                </fieldset>
+            </form>
+
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
