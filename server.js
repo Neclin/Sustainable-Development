@@ -11,6 +11,10 @@ const goalRouter = require("./routes/goals");
 
 app.use("/goals", goalRouter);
 
+const signupRouter = require("./routes/sign-up");
+
+app.use("/sign-up", signupRouter);
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

@@ -28,7 +28,7 @@ header > h1 {
     display: inline-block;
     margin: 10px 5px;
     border-radius: 15px;
-    background-color: #111;
+    background-color: #618e56;
     color: white;
 }
 
@@ -42,7 +42,7 @@ legend {
 
 label {
     display: inline-block;
-    background: #111;
+    background-color: #618e56;
     color: whitesmoke;
     padding: 5px 10px;
     margin: 5px;
