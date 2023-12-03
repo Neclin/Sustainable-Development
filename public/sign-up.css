@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+header {
+    background-color: #f6de73;
+    height: 100px;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 10px 5px;
+    background-color: inherit;
+}
+
+.sign-upMain{
+    display: block;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 2% 10%;
+}
+
+#wrapper > h3 {
+    padding: 10px 15px;
+    border: solid ;
+    display: inline-block;
+    margin: 10px 5px;
+    border-radius: 15px;
+    border: 2px solid #618e56;
+    background-color: #618e56;
+    color: white;
+}
+
+fieldset {
+    border-left: 10px solid rgb(116, 156, 107);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    background-color: rgb(116, 156, 107, 0.4);
+    margin-top: 10px;
+}
+
+legend {
+    padding: 5px 10px;
+    border: 2px solid #618e56;
+    background-color: #618e56;
+    color: white;
+    margin: 10px 0px;
+}
+
+label {
+    display: inline-block;
+    background-color: #618e56;
+    color: whitesmoke;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    border: 1px solid #618e56;
+    border-radius: 10px;
+}
+
+input, textarea {
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+input:active, textarea:active {
+    border-style: inset;
+}
+
+input {
+    padding: 1% 20%;
+    text-align: center;
+}
+
+textarea {
+    height: 100px;
+    width: 80%;
+    padding: 1%;
+}
+
+#submit {
+    margin: 5px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+#submit:active {
+    border-style: inset;
+}
