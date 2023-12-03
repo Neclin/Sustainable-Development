@@ -1,5 +1,4 @@
 * {
-    background-color: whitesmoke;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -16,6 +15,9 @@ header > h1 {
     background-color: inherit;
 }
 
+.sign-upMain{
+    display: block;
+}
 
 #wrapper {
     text-align: center;
@@ -28,16 +30,26 @@ header > h1 {
     display: inline-block;
     margin: 10px 5px;
     border-radius: 15px;
+    border: 2px solid #618e56;
     background-color: #618e56;
     color: white;
 }
 
 fieldset {
-    border-radius: 15px;
+    border-left: 10px solid rgb(116, 156, 107);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    background-color: rgb(116, 156, 107, 0.4);
+    margin-top: 10px;
 }
 
 legend {
-    padding: 2px 5px;
+    padding: 5px 10px;
+    border: 2px solid #618e56;
+    background-color: #618e56;
+    color: white;
+    margin: 10px 0px;
 }
 
 label {
@@ -45,24 +57,39 @@ label {
     background-color: #618e56;
     color: whitesmoke;
     padding: 5px 10px;
-    margin: 5px;
-    border: solid;
-    border-radius: 5px;
+    margin: 10px 0px;
+    border: 1px solid #618e56;
+    border-radius: 10px;
+}
+
+input, textarea {
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+input:active, textarea:active {
+    border-style: inset;
 }
 
 input {
-    display: block;
-    margin: auto;
     padding: 1% 20%;
     text-align: center;
-    border-radius: 15px;
 }
 
 textarea {
-    display: block;
-    margin: auto;
     height: 100px;
     width: 80%;
     padding: 1%;
-    border-radius: 15px;
+}
+
+#submit {
+    margin: 5px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+#submit:active {
+    border-style: inset;
 }
