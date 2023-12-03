@@ -28,7 +28,6 @@
 .slideshow {
   width: 80%;
   height: 40vh;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +38,15 @@
 
 .slideshow button {
   height: 50px;
-  width: 30px;
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px var(--page-colour);
+}
+
+.slideshow button:active {
+  box-shadow: none;
+  translate: 2px 2px;
 }
 
 .slide {
@@ -53,7 +60,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 
   padding: 20px;
 }
@@ -63,10 +69,12 @@
 }
 
 .slide p {
+  margin-top: 10px;
   height: 80%;
   text-align: center;
   background-color: whitesmoke;
   width: 100%;
+  outline: 2px solid black;
 
   border-radius: 15px;
 }
@@ -88,9 +96,30 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  border-radius: 15px;
 }
 
 .target p {
   height: 70%;
 }
 
+@media only screen and (max-width: 800px) {
+  .primary-data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-data img{
+    width: 80%;
+  }
+
+  .primary-text-container{
+    width: calc(80% - 40px);
+  }
+
+  .targets { 
+    height: 100vh;
+    grid-template-columns: auto;
+  }
+}
