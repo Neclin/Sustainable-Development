@@ -8,12 +8,13 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 const goalRouter = require("./routes/goals");
-
 app.use("/goals", goalRouter);
 
 const signupRouter = require("./routes/sign-up");
-
 app.use("/sign-up", signupRouter);
+
+const teamsRouter = require("./routes/teams");
+app.use("/teams", teamsRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
