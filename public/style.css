@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root {
-  --page-colour: rgb(255, 0, 0)
+  --page-colour: rgb(255, 0, 0);
+  --accent-colour: rgb(255, 0, 0);
 }
 
 * {
