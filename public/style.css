@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+:root {
+  --page-colour: rgb(255, 0, 0)
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,10 +32,17 @@ a {
   text-decoration: none;
 }
 
+.active-page {
+  color: var(--page-colour);
+}
+
+.active-nav {
+  background-color: rgb(51, 51, 51) !important;
+}
+
 .nav-bar {
   display: flex;
   list-style-type: none;
-  /* overflow: hidden; */
 }
 
 .nav-element {
@@ -43,6 +54,7 @@ a {
   background-color: rgb(200, 200, 200);
   font-size: 17px;
 }
+
 .nav-element:hover {
   background-color: rgb(51, 51, 51);
   color: whitesmoke;
@@ -74,6 +86,7 @@ a {
   background-color: #f9f9f9;
   width: 100%;
   z-index: 1;
+  border-radius: 0 0 15px 15px;
 }
 
 .dropdown-content li{
@@ -87,6 +100,10 @@ a {
 
 .dropdown-content li:hover a{
   color: whitesmoke;
+}
+
+.dropdown-content li:last-child {
+  border-radius: 0 0 15px 15px;
 }
 
 main {

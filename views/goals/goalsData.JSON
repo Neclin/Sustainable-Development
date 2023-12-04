@@ -5,8 +5,9 @@
     "imgAlt": "Quality Education",
     "description": "This is the Quality Education page",
     "overview": "Here is an overview of the Quality Education page",
-    "important": "This why Quality Education is important This why Quality Education is important This why Quality Education is important This why Quality Education is important This why Quality Education is important This why Quality Education is important",
+    "important": "This is why Quality Education is important",
     "pageColour":"rgb(206, 77, 77)",
+    "accentColour":"rgb(90, 203, 255)",
     "slides": [
       {
         "title": "Slide 1",
@@ -19,6 +20,14 @@
       {
         "title": "Slide 3",
         "content": "This is slide 3"
+      },
+      {
+        "title": "Slide 4",
+        "content": "This is slide 4"
+      },
+      {
+        "title": "Slide 5",
+        "content": "This is slide 5"
       }
     ],
     "targets": [
@@ -46,8 +55,9 @@
     "imgAlt": "Affordable and Clean Energy",
     "description": "This is the Affordable and Clean Energy page",
     "overview": "Here is an overview of the Affordable and Clean Energy page",
-    "important": "This why Affordable and Clean Energy is important",
+    "important": "This is why Affordable and Clean Energy is important",
     "pageColour":"rgb(137, 207, 240)",
+    "accentColour":"rgb(90, 203, 255)",
     "slides": [
       {
         "title": "Slide 1",
@@ -87,6 +97,40 @@
     "imgAlt": "Life Below Water",
     "description": "This is the Life Below Water page",
     "overview": "Here is an overview of the Life Below Water page",
-    "important": "This why Life Below Water is important"
+    "important": "This is why Life Below Water is important",
+    "pageColour":"rgb(137, 207, 240)",
+    "accentColour":"rgb(90, 203, 255)",
+    "slides" : [
+      {
+        "title": "Slide 1",
+        "content": "This is slide 1"
+      },
+      {
+        "title": "Slide 2",
+        "content": "This is slide 2"
+      },
+      {
+        "title": "Slide 3",
+        "content": "This is slide 3"
+      }
+    ],
+    "targets": [
+      {
+        "title": "Target 1",
+        "content": "This is target 1"
+      },
+      {
+        "title": "Target 2",
+        "content": "This is target 2"
+      },
+      {
+        "title": "Target 3",
+        "content": "This is target 3"
+      },
+      {
+        "title": "Target 4",
+        "content": "This is target 4"
+      }
+    ]
   }
 ]

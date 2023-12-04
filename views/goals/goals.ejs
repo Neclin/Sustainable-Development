@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="/goals.css">
   <style>
     :root {
-      --page-colour: <%= locals.pageColour %>
+      --page-colour: <%= locals.pageColour %>;
+      --accent-colour: <%= locals.accentColour %>;
     }
     </style>
     <script src="/goals.js" defer></script>
@@ -20,7 +21,7 @@
       <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
       <li class="nav-element"> <a href="../team"> Team </a></li>
       <li class="dropdown">
-        <button class="nav-element dropdown-btn"> Pages </button>
+        <button class="nav-element dropdown-btn active-page active-nav"> Pages </button>
         <ul class="dropdown-content">
           <li><a href="1"> Quality Education </a></li>
           <li><a href="2"> Affordable & Clean Energy </a></li>

@@ -3,10 +3,11 @@ let numberOfSlides = 1;
 showSlides(slideIndex);
 
 function changeSlides(offset) {
-  showSlides((slideIndex += offset));
+  slideIndex += offset;
+  showSlides();
 }
 
-function showSlides(start) {
+function showSlides() {
   const slides = document.getElementsByClassName("slide");
   if (slideIndex < 1) {
     slideIndex = 1;
@@ -14,7 +15,6 @@ function showSlides(start) {
   if (slideIndex + numberOfSlides - 1 > slides.length) {
     slideIndex = slides.length - numberOfSlides + 1;
   }
-  console.log(slideIndex);
   // Get all slides and hide them
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -33,7 +33,7 @@ function checkWidth(widthQuery) {
   } else {
     numberOfSlides = 2;
   }
-  showSlides(slideIndex);
+  showSlides();
 }
 
 widthQuery.addEventListener("change", checkWidth);
