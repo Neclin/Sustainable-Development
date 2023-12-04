@@ -2,7 +2,7 @@
 
 :root {
   --page-colour: rgb(255, 0, 0);
-  --accent-colour: rgb(255, 0, 0);
+  --accent-colour: whitesmoke;
 }
 
 * {
@@ -34,7 +34,7 @@ a {
 }
 
 .active-page {
-  color: var(--page-colour);
+  color: var(--accent-colour);
 }
 
 .active-nav {
