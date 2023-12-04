@@ -73,13 +73,17 @@
 
 .slide p {
   margin-top: 10px;
-  height: 80%;
-  text-align: center;
+  height: calc(80% - 30px);
   background-color: whitesmoke;
-  width: 100%;
+  width: calc(100% - 30px);
   outline: 2px solid black;
-
+  padding: 15px;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4em;
 }
 
 .targets {
@@ -116,6 +120,21 @@
 
 .target p {
   height: 70%;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .slide h1 {
+    font-size: 1.1em;
+  }
+
+  .slide p {
+    font-size: 1em;
+  }
+
+  .target h1 {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -135,5 +154,9 @@
   .targets { 
     height: 100vh;
     grid-template-columns: auto;
+  }
+
+  .targets h1 {
+    font-size: 1.5em;
   }
 }

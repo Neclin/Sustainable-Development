@@ -1,0 +1,31 @@
+{
+  "goals": [
+    {
+      "title": "Quality Education",
+      "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+      "backgroundImage": "/images/education.jpg",
+      "imageAlt": "Education",
+      "objective": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+      "challange": "Goal 4 focuses on ensuring that all children, regardless of gender or socioeconomic background, have access to quality primary and secondary education.",
+      "impact": "Achieving Goal 4 contributes to poverty reduction, as education is a key driver of economic development and social progress."
+    },
+    {
+      "title": "Affordable and Clean Energy",
+      "description": "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+      "backgroundImage": "/images/energy.jpg",
+      "imageAlt": "Energy",
+      "objective": "Ensure access to affordable, reliable, sustainable, and modern energy for all.",
+      "challange": "Goal 7 aims to address the lack of access to modern and reliable energy services, particularly in developing regions. It recognizes that energy poverty is a significant barrier to economic development and social well-being.",
+      "impact": "Achieving Goal 7 would lead to improved living standards, economic development, and environmental sustainability."
+    },
+    {
+      "title": "Life Below Water",
+      "description": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
+      "backgroundImage": "/images/water.jpg",
+      "imageAlt": "Water",
+      "objective": "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development.",
+      "challange": " Goal 14 aims to prevent and reduce various forms of marine pollution, including plastic waste, oil spills, and other pollutants that adversely affect marine ecosystems.",
+      "impact": "Achieving Goal 14 ensures the health and resilience of oceans and seas, which are vital for supporting biodiversity, regulating climate, and providing livelihoods for millions of people dependent on fisheries and coastal ecosystems."
+    }
+  ]
+}

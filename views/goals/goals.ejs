@@ -49,7 +49,7 @@
       <% if (locals.slides) { %>
         <% locals.slides.forEach(slide => { %>
           <div class="slide">
-            <h1> Title <%= slide.title %> </h1>
+            <h1> <%= slide.title %> </h1>
             <p> <%= slide.content %> </p>
           </div>
         <% }) %>
@@ -60,7 +60,7 @@
       <% if (locals.targets) { %>
         <% locals.targets.forEach(target => { %>
           <div class="target">
-            <h1> Title <%= target.title %> </h1>
+            <h1> <%= target.title %> </h1>
             <p> <%= target.content %> </p>
           </div>
         <% }) %>

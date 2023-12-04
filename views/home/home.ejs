@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page Mock Up</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-element active-nav"><a class="active-page" href="/"> Home </a></li>
+      <li class="nav-element"> <a href="sign-up"> Sign Up </a></li>
+      <li class="nav-element"> <a href="teams"> Meet The Team </a></li>
+      <li class="dropdown">
+        <button class="nav-element dropdown-btn"> Pages </button>
+        <ul class="dropdown-content">
+          <li><a href="goals/1"> Quality Education </a></li>
+          <li><a href="goals/2"> Affordable & Clean Energy </a></li>
+          <li><a href="goals/3"> Life Below Water </a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <% if (locals.goals) { %>
+     <% locals.goals.forEach((goal, index) => { %>
+      <div class="parallax-element" style="background-image: url('<%= goal.backgroundImage %>')">
+        <span class="goal-title">
+          <h1 class="light"> <a href="goals/<%= index+1 %>"> <%= goal.title %></a></h1>
+        </span>
+        <div class="goal-text">
+          <div class="goal-objective">
+            <h2> Objective </h2>
+            <p> <%= goal.objective %></p>
+          </div>
+          <div class="goal-challange">
+            <h2> Challange </h2>
+            <p> <%= goal.challange %></p>
+          </div>
+          <div class="goal-impact">
+            <h2> Impact </h2>
+            <p> <%= goal.impact %></p>
+          </div>
+        </div>
+      </div>
+     <% }) %>
+    <% } %>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
