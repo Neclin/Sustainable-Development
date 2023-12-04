@@ -25,8 +25,11 @@ main {
 .goal-title {
   background-color: #111;
   height: 50px;
-  padding: 10px 15px 0 15px;
+  padding: 5px 15px;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .goal-title a {
@@ -53,4 +56,20 @@ main {
 
 .goal-text div h2 {
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .goal-text {
+    width: 50%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .parallax-element {
+    background-attachment: scroll;
+  }
+  .goal-title h1 {
+    font-size: 1.5em;
+  }
 }
