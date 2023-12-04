@@ -96,8 +96,8 @@
     "imgURL": "images/water.jpg",
     "imgAlt": "Life Below Water",
     "description": "This is the Life Below Water page",
-    "overview": "Here is an overview of the Life Below Water page",
-    "important": "This is why Life Below Water is important",
+    "overview": "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development.",
+    "important": "Goal 14 focuses on minimizing and addressing the impacts of ocean acidification, which poses a threat to marine life, particularly organisms with calcium carbonate skeletons and shells.",
     "pageColour":"rgb(137, 207, 240)",
     "accentColour":"rgb(90, 203, 255)",
     "slides" : [
