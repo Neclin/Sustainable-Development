@@ -17,15 +17,31 @@ body {
 }
 
 header {
-  border-bottom: 1px solid black;
-  height: 100px;
-  text-align: center;
-  font-size: 76px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.header-wrapper {
+  display: flex;
+  width: 10%;
+}
+.hamburger-icon { 
+  display: none;
+  font-size: 32px;
+}
+
+.un-logo {
+  width: 100%;
+  height: auto;
 }
 
 nav {
-  border-bottom: 1px solid black;
+  width: 90%;
   height: 50px;
+  border-radius: 15px;
 }
 
 a {
@@ -56,10 +72,17 @@ a {
   font-size: 17px;
 }
 
+.nav-bar .nav-element:first-child {
+  border-radius: 15px 0 0 15px;
+}
+
+.dropdown-btn {
+  border-radius: 0 15px 15px 0 !important;
+}
+
 .nav-element:hover {
   background-color: rgb(51, 51, 51);
   color: whitesmoke;
-
 }
 
 .nav-element:hover a{
@@ -73,6 +96,12 @@ a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+  border-radius: 0 15px 0 0 !important;
+  background-color: rgb(51, 51, 51);
+  color: whitesmoke;
 }
 
 .dropdown-btn {
@@ -96,7 +125,7 @@ a {
 }
 
 .dropdown-content li:hover {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(65, 65, 65);
 }
 
 .dropdown-content li:hover a{
@@ -117,4 +146,76 @@ main {
 footer {
   height: 100px;
   background-color: rgb(51, 51, 51);
+}
+
+@media only screen and (max-width: 800px) {
+  .header-wrapper {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  
+  header {
+    flex-direction: column;
+  }
+
+  .header-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+  
+  .un-logo {
+    display: block;
+    width: 50%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 60%;
+    z-index: 1;
+    position: absolute;
+    top: 90px;
+  }
+
+  .show-nav {
+    display: flex;
+  }
+
+  .dropdown-btn {
+    display: none;
+    border-radius: 0 !important;
+  }
+
+  .dropdown {
+    pointer-events: none;
+  }
+
+  .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content li {
+    pointer-events: all;
+    background-color: rgb(200, 200, 200);
+  }
+
+  .nav-bar .nav-element:first-child {
+    border-radius: 15px 15px 0 0;
+  }
 }

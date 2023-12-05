@@ -6,6 +6,8 @@
   <title><%= locals.title %></title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/goals.css">
+  <script src="https://kit.fontawesome.com/af288e161d.js" crossorigin="anonymous"></script>
+  <script src="../hamburger.js" defer></script>
   <style>
     :root {
       --page-colour: <%= locals.pageColour %>;
@@ -15,21 +17,27 @@
     <script src="/goals.js" defer></script>
 </head>
 <body>
-  <nav>
-    <ul class="nav-bar">
-      <li class="nav-element"><a href="/"> Home </a></li>
-      <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
-      <li class="nav-element"> <a href="../teams"> Team </a></li>
-      <li class="dropdown">
-        <button class="nav-element dropdown-btn active-page active-nav"> Pages </button>
-        <ul class="dropdown-content">
-          <li><a href="1"> Quality Education </a></li>
-          <li><a href="2"> Affordable & Clean Energy </a></li>
-          <li><a href="3"> Life Below Water </a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <div class="header-wrapper">
+      <img class="un-logo" src="../images/un-logo.png" alt="United Nations logo">
+      <a class="hamburger-icon"> <i class="fa-solid fa-bars"></i> </a>
+    </div>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-element"><a href="/"> Home </a></li>
+        <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
+        <li class="nav-element"> <a href="../teams"> Team </a></li>
+        <li class="dropdown">
+          <button class="nav-element dropdown-btn active-page active-nav"> Goals </button>
+          <ul class="dropdown-content">
+            <li><a href="1"> Quality Education </a></li>
+            <li><a href="2"> Affordable & Clean Energy </a></li>
+            <li><a href="3"> Life Below Water </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <article class="primary-data">
       <img class src="/<%= locals.imgURL %>" alt="<%= locals.imgAlt %>">

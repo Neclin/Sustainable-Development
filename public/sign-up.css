@@ -4,17 +4,6 @@
     text-decoration: none;
 }
 
-header {
-    background-color: #f6de73;
-    height: 100px;
-    text-align: center;
-}
-
-header > h1 {
-    padding: 10px 5px;
-    background-color: inherit;
-}
-
 .sign-upMain{
     display: block;
 }
