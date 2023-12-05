@@ -82,3 +82,27 @@ textarea {
 #submit:active {
     border-style: inset;
 }
+
+@media only screen and (min-width: 1750px){
+    * {
+        font-size: 110%;
+    }
+
+    label, #submit, textarea, input {
+        border-radius: 15px;
+    }
+
+    label {
+        font-size: 125%;
+        padding: 5px 15px;
+    }
+
+    #submit, label {
+        margin: 15px
+    }
+
+    h3 {
+        font-size: 175%;
+        border-radius: 17.5px
+    }
+}

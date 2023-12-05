@@ -56,8 +56,8 @@
     "description": "This is the Affordable and Clean Energy page",
     "overview": "Here is an overview of the Affordable and Clean Energy page",
     "important": "This is why Affordable and Clean Energy is important",
-    "pageColour":"rgb(137, 207, 240)",
-    "accentColour":"rgb(90, 203, 255)",
+    "pageColour":"rgb(116, 227, 129)",
+    "accentColour":"rgb(102, 196, 113)",
     "slides": [
       {
         "title": "Slide 1",
