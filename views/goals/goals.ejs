@@ -10,8 +10,8 @@
   <script src="../hamburger.js" defer></script>
   <style>
     :root {
-      --page-colour: <%= locals.pageColour %>;
-      --accent-colour: <%= locals.accentColour %>;
+      --page-colour: <%= locals.goalData.pageColour %>;
+      --accent-colour: <%= locals.goalData.accentColour %>;
     }
     </style>
     <script src="/goals.js" defer></script>
@@ -24,15 +24,17 @@
     </div>
     <nav>
       <ul class="nav-bar">
-        <li class="nav-element"><a href="/"> Home </a></li>
+        <li class="nav-element"><a href="../"> Home </a></li>
         <li class="nav-element"> <a href="../sign-up"> Sign Up </a></li>
         <li class="nav-element"> <a href="../teams"> Team </a></li>
         <li class="dropdown">
-          <button class="nav-element dropdown-btn active-page active-nav"> Goals </button>
+          <button class="nav-element dropdown-btn active-nav active-page" "> Goals </button>
           <ul class="dropdown-content">
-            <li><a href="1"> Quality Education </a></li>
-            <li><a href="2"> Affordable & Clean Energy </a></li>
-            <li><a href="3"> Life Below Water </a></li>
+            <% if (locals.goals) { %>
+              <% locals.goals.forEach((goal, index) => { %>
+                <li> <a href="../goals/<%= index+1 %>"<"> <%= goal.title %> </a> </li>  
+              <% }) %>
+            <% } %>
           </ul>
         </li>
       </ul>
@@ -40,22 +42,22 @@
   </header>
   <main>
     <article class="primary-data">
-      <img class src="/<%= locals.imgURL %>" alt="<%= locals.imgAlt %>">
+      <img class src="/<%= locals.goalData.imgURL %>" alt="<%= locals.goalData.imgAlt %>">
       <div class="primary-text-container">
         <div>
           <h2>Overview:</h2>
-          <p><%= locals.overview %></p>
+          <p><%= locals.goalData.overview %></p>
         </div>
         <div>
           <h2>Why this is important:</h2>
-          <p><%= locals.important %></p>
+          <p><%= locals.goalData.important %></p>
         </div>
       </div>
     </article>
     <article class="slideshow">
       <button class="slideshow-left" onclick="changeSlides(-1)">&#10094;</button>
-      <% if (locals.slides) { %>
-        <% locals.slides.forEach(slide => { %>
+      <% if (locals.goalData.slides) { %>
+        <% locals.goalData.slides.forEach(slide => { %>
           <div class="slide">
             <h1> <%= slide.title %> </h1>
             <p> <%= slide.content %> </p>
@@ -65,8 +67,8 @@
       <button class="slideshowright" onclick="changeSlides(+1)">&#10095;</button>
     </article>
     <article class="targets">
-      <% if (locals.targets) { %>
-        <% locals.targets.forEach(target => { %>
+      <% if (locals.goalData.targets) { %>
+        <% locals.goalData.targets.forEach(target => { %>
           <div class="target">
             <h1> <%= target.title %> </h1>
             <p> <%= target.content %> </p>

@@ -20,14 +20,16 @@
     <nav>
       <ul class="nav-bar">
         <li class="nav-element"><a href="/"> Home </a></li>
-        <li class="nav-element active-nav"> <a class="active-page" href="../sign-up"> Sign Up </a></li>
-        <li class="nav-element"> <a href="../teams"> Team </a></li>
+        <li class="nav-element active-nav"> <a class="active-page" href="sign-up"> Sign Up </a></li>
+        <li class="nav-element"> <a href="teams"> Team </a></li>
         <li class="dropdown">
           <button class="nav-element dropdown-btn"> Goals </button>
           <ul class="dropdown-content">
-            <li><a href="../goals/1"> Quality Education </a></li>
-            <li><a href="../goals/2"> Affordable & Clean Energy </a></li>
-            <li><a href="../goals/3"> Life Below Water </a></li>
+            <% if (locals.goals) { %>
+              <% locals.goals.forEach((goal, index) => { %>
+                <li> <a href="goals/<%= index+1 %>"<"> <%= goal.title %> </a> </li>  
+              <% }) %>
+            <% } %>
           </ul>
         </li>
       </ul>
@@ -61,6 +63,19 @@
         </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-text">
+        <% locals.footer.lines.forEach(line => { %>
+         <p> <%- line %> </p>
+        <% }) %>
+      </div>
+      <div class="social-links">
+        <h2>Follow us:</h2>
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
 </body>
 </html>

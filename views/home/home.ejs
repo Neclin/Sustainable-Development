@@ -23,9 +23,11 @@
         <li class="dropdown">
           <button class="nav-element dropdown-btn"> Goals </button>
           <ul class="dropdown-content">
-            <li><a href="goals/1"> Quality Education </a></li>
-            <li><a href="goals/2"> Affordable & Clean Energy </a></li>
-            <li><a href="goals/3"> Life Below Water </a></li>
+            <% if (locals.goals) { %>
+              <% locals.goals.forEach((goal, index) => { %>
+                <li> <a href="goals/<%= index+1 %>"<"> <%= goal.title %> </a> </li>  
+              <% }) %>
+            <% } %>
           </ul>
         </li>
       </ul>

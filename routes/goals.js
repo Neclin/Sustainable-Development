@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const goalsJSON = require("../views/goals/goalsData.json");
+const goals = require("../views/goals/goalsData.json");
+const footer = require("../views/footerData.json");
 
 // const connectLivereload = require("connect-livereload");
 // const livereload = require("livereload");
@@ -15,8 +16,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:goalId", (req, res) => {
-  goalData = goalsJSON[req.params.goalId - 1];
-  res.render("goals/goals", goalData);
+  goalData = goals[req.params.goalId - 1];
+  res.render("goals/goals", { goals, goalData, footer });
 });
 
 module.exports = router;
