@@ -10,42 +10,38 @@
     "accentColour":"rgb(223 42 42)",
     "slides": [
       {
-        "title": "Slide 1",
-        "content": "This is slide 1"
+        "title": "Education and Economic Development",
+        "content": "Quality education is a key driver for sustainable economic growth, as educated populations are better equipped to contribute to their communities and economies."
       },
       {
-        "title": "Slide 2",
-        "content": "This is slide 2"
+        "title": "Gender Equality",
+        "content": "Eliminating gender disparities in education is crucial for achieving gender equality by ensuring that both girls and boys have equal access to educational opportunities."
       },
       {
-        "title": "Slide 3",
-        "content": "This is slide 3"
+        "title": "Holistic Approach",
+        "content": "Goal 4 emphasizes a holistic approach to education, from early childhood development to lifelong learning, recognizing education as a fundamental right and a catalyst for positive change."
       },
       {
-        "title": "Slide 4",
-        "content": "This is slide 4"
-      },
-      {
-        "title": "Slide 5",
-        "content": "This is slide 5"
+        "title": "Innovation in Education",
+        "content": "Encourages innovation in educational methods and technologies to adapt to the changing needs of the global economy, promoting lifelong learning opportunities."
       }
     ],
     "targets": [
       {
-        "title": "Target 1",
-        "content": "This is target 1"
+        "title": "Complete Primary and Secondary Education",
+        "content": "Ensure that all girls and boys have access to, and complete, free, equitable, and quality primary and secondary education."
       },
       {
-        "title": "Target 2",
-        "content": "This is target 2"
+        "title": "Access to Early Childhood Development",
+        "content": "Ensure that all girls and boys have access to quality early childhood development, care, and pre-primary education."
       },
       {
-        "title": "Target 3",
-        "content": "This is target 3"
+        "title": "Relevant Skills for Employment",
+        "content": "Increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment and entrepreneurship."
       },
       {
-        "title": "Target 4",
-        "content": "This is target 4"
+        "title": "Disparities in Education",
+        "content": "Eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities."
       }
     ]
   },

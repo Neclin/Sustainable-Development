@@ -1,0 +1,22 @@
+{
+  "teamMembers": [
+    {
+    "name": "Grace",
+    "photoURL": "",
+    "photoAlt": "None",
+    "role": "Coded the teams page and researched Quality Education content"
+    },
+    {
+      "name": "Olly",
+      "photoURL": "",
+      "photoAlt": "None",
+      "role": "Coded the Sign Up page, backend code for form submission and researched Affordable and Clean Energy content"
+    },
+    {
+      "name": "Luke",
+      "photoURL": "/images/luke.jpg",
+      "photoAlt": "Image of the team member Luke",
+      "role": "Coded the home page, backend code for express server and dynamic content loading with ejs, researched Life Below Water content"
+    }
+  ] 
+}

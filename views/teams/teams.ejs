@@ -35,15 +35,15 @@
   </header>
   <main>
     <section>
-      <article class="service">
-        <h2> Meet the team </h2>
+      <h1 class="greating"> Meet the team </h1>
+      <article class="team-member-container">
         <% if (locals.teamMembers) { %>
           <% locals.teamMembers.forEach(teamMember => { %>
             <div class="team-member">
               <img class="team-img" src="<%= teamMember.photoURL %>" alt="<%= teamMember.photoAlt %>">
               <div class="team-text">
                 <h3 class="team-name"> <%= teamMember.name %></h3>
-                <h4> Role(s): </h4>
+                <h4> Roles: </h4>
                 <p class="team-role"> <%= teamMember.role %></p>
               </div>
             </div>
