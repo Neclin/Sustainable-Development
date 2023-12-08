@@ -3,6 +3,8 @@
 :root {
   --page-colour: rgb(255, 0, 0);
   --accent-colour: whitesmoke;
+  --padding-amount: 20px;
+  --border-radius: 15px;
 }
 
 * {
@@ -20,8 +22,9 @@ header {
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
-  padding: 15px;
+  padding: var(--padding-amount);
 }
 
 .header-wrapper {
@@ -40,8 +43,7 @@ header {
 
 nav {
   width: 90%;
-  height: 50px;
-  border-radius: 15px;
+  border-radius: var(--border-radius);
 }
 
 a {
@@ -65,7 +67,7 @@ a {
 .nav-element {
   flex: 1;
   text-align: center;
-  padding: 15px;
+  padding: var(--padding-amount);
   border: none;
   margin: 0;
   background-color: rgb(200, 200, 200);
@@ -73,11 +75,11 @@ a {
 }
 
 .nav-bar .nav-element:first-child {
-  border-radius: 15px 0 0 15px;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 .dropdown-btn {
-  border-radius: 0 15px 15px 0 !important;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
 
 .nav-element:hover {
@@ -99,7 +101,7 @@ a {
 }
 
 .dropdown:hover .dropdown-btn {
-  border-radius: 0 15px 0 0 !important;
+  border-radius: 0 var(--border-radius) 0 0 !important;
   background-color: rgb(51, 51, 51);
   color: whitesmoke;
 }
@@ -116,12 +118,12 @@ a {
   background-color: #f9f9f9;
   width: 100%;
   z-index: 1;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .dropdown-content li{
   text-align: center;
-  padding: 10px;
+  padding: var(--padding-amount);
 }
 
 .dropdown-content li:hover {
@@ -133,7 +135,7 @@ a {
 }
 
 .dropdown-content li:last-child {
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 main {
@@ -199,7 +201,7 @@ footer {
 
   .dropdown-btn {
     display: none;
-    border-radius: 0 !important;
+    border-radius: var(--border-radius)mportant;
   }
 
   .dropdown {
@@ -216,7 +218,7 @@ footer {
   }
 
   .nav-bar .nav-element:first-child {
-    border-radius: 15px 15px 0 0;
+    border-radius: var(--border-radius) 15px 0 0;
   }
 }
 
@@ -224,7 +226,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: var(--padding-amount);
 }
 
 .footer-text {
@@ -246,4 +248,28 @@ footer {
 .social-links a {
   font-size: 36px;
   color: whitesmoke;
+}
+
+
+@media only screen and (min-width: 1500px) {
+  :root {
+    --padding-amount: 40px;
+    --border-radius: 30px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .header-wrapper {
+    width: 20%;
+  }
+
+  .nav-element, .dropdown-content{
+    font-size: 2em;
+  }
+
+  footer {
+    font-size: 2em;
+  }
 }
