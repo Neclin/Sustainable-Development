@@ -28,6 +28,7 @@ header {
   justify-content: center;
   gap: 20px;
   padding: var(--padding-amount);
+  border-bottom: 1px solid rgb(51, 51, 51);
 }
 
 .header-wrapper {
@@ -163,6 +164,29 @@ footer {
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  :root {
+    --padding-amount: 40px;
+    --border-radius: 30px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .header-wrapper {
+    width: 20%;
+  }
+
+  .nav-element, .dropdown-content{
+    font-size: 2em;
+  }
+
+  footer {
+    font-size: 2em;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   
   header {
@@ -254,25 +278,3 @@ footer {
 }
 
 
-@media only screen and (min-width: 1500px) {
-  :root {
-    --padding-amount: 40px;
-    --border-radius: 30px;
-  }
-
-  header {
-    height: 100px;
-  }
-
-  .header-wrapper {
-    width: 20%;
-  }
-
-  .nav-element, .dropdown-content{
-    font-size: 2em;
-  }
-
-  footer {
-    font-size: 2em;
-  }
-}
