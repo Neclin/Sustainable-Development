@@ -5,7 +5,7 @@ const port = 3000;
 const bodyParser = require("body-parser");
 const jsonParser = bodyParser.json();
 
-let formEntries = [];
+const fs = require('fs'); // 
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
@@ -29,7 +29,23 @@ app.listen(port, () => {
 });
 
 app.post("/form", jsonParser, (req, res) => {
-  formEntries.push(req.body);
-  res.send(`Thank you ${req.body.firstName} for joining our newsletter!`);
-  console.log(formEntries);
+  fs.readFile("./formDetails.JSON", (err, data) => {  // reads all the data in the JSON file and asigns it with the data parameter
+    if (err) {
+      console.log("Failed to read file.")
+      return;
+    }
+
+    const newData = JSON.parse(data)
+    newData.entries.push(req.body) // appends the new users entry to all the existing entries within the file
+
+    fs.writeFile("./formDetails.JSON", JSON.stringify(newData), (error) => {  // converts the combined old entries and new entries back into json objects and writes it to the file
+      if (error){
+        console.log("Entry could not be added.")
+        return;
+      }
+      console.log("Entry was successfully added.")
+    })
+
+  })
+  res.send(`Thank you ${req.body.firstName} for joining our newsletter!`)
 });

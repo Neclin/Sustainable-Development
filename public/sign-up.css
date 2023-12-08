@@ -83,6 +83,13 @@ textarea {
     border-style: inset;
 }
 
+#entryConfirmText {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid;
+    display: inline-block;
+}
+
 @media only screen and (min-width: 2000px){
     main {
         font-size: 2em;

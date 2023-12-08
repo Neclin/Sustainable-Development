@@ -3,7 +3,11 @@ function onResponse(response){
 }
 
 function onResultReady(text){
-    alert(text);
+    const confirmationDiv = document.querySelector("#entryConfirmation");
+    const confirmationText = document.createElement("p");
+    confirmationText.innerHTML = text;
+    confirmationText.id = "entryConfirmText"
+    confirmationDiv.appendChild(confirmationText);
 }
 
 function processForm(e){
