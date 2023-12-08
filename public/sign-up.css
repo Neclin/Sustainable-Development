@@ -83,9 +83,9 @@ textarea {
     border-style: inset;
 }
 
-@media only screen and (min-width: 1750px){
-    * {
-        font-size: 110%;
+@media only screen and (min-width: 2000px){
+    main {
+        font-size: 2em;
     }
 
     label, #submit, textarea, input {
