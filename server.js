@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const jsonParser = bodyParser.json();
 
-let formEntries = []
+let formEntries = [];
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
@@ -32,4 +32,4 @@ app.post("/form", jsonParser, (req, res) => {
   formEntries.push(req.body);
   res.send(`Thank you ${req.body.firstName} for joining our newsletter!`);
   console.log(formEntries);
-})
+});

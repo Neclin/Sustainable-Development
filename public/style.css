@@ -219,3 +219,31 @@ footer {
     border-radius: 15px 15px 0 0;
   }
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.footer-text {
+  color: rgb(200, 200, 200);
+}
+
+.footer-text a {
+  color: rgb(200, 200, 200);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+.social-links a {
+  font-size: 36px;
+  color: whitesmoke;
+}

@@ -10,7 +10,7 @@ main{
 
 section {
   width: 80vw;
-  background-color: white;
+  background-color: whitesmoke;
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -38,6 +38,9 @@ section {
   align-items: start;
   justify-content: center;
   gap: 20px;
+  border-radius: 15px;
+  background-color: rgb(200, 200, 200);
+  padding: 15px;
 }
 
 .team-img {
@@ -49,6 +52,7 @@ section {
 .team-text {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .team-text h4 {

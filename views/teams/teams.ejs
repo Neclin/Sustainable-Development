@@ -42,7 +42,8 @@
             <div class="team-member">
               <img class="team-img" src="<%= teamMember.photoURL %>" alt="<%= teamMember.photoAlt %>">
               <div class="team-text">
-                <h3 class="team-name"> <%= teamMember.name %></h3>
+                <h3 class="team-name"> <%= teamMember.name %> </h3>
+                <h3 class="team-email"> <a href="mailto:<%= teamMember.email %>">Email: <%= teamMember.email %> </a> </h3>
                 <h4> Roles: </h4>
                 <p class="team-role"> <%= teamMember.role %></p>
               </div>
@@ -52,6 +53,18 @@
       </article>
     </section>
   </main>
+  <footer>
+    <div class="footer-data">
+      <%= locals.footerData %>
+    </div>
+    <div class="social-links">
+      <h2>Follow us:</h2>
+      <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
 </body> 
 
 
