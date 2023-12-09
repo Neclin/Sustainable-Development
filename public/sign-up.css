@@ -95,6 +95,10 @@ textarea {
         font-size: 2em;
     }
 
+    input, textarea {
+        font-size: 1em;
+    }
+
     label, #submit, textarea, input {
         border-radius: 15px;
     }
