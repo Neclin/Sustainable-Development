@@ -109,9 +109,9 @@
 
 .target h1 {
   border-bottom: 1px solid black;
-  width: 100%;
+  width: calc(100% - 2 * var(--padding-amount));
   height: 22%;
-  padding: var(--padding-amount) 0;
+  padding: var(--padding-amount);
   background-color: var(--accent-colour);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   display: flex;
@@ -179,17 +179,38 @@
   }
 
   .targets { 
-    height: 100vh;
     grid-template-columns: auto;
   }
 
   .targets h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .dropdown-btn {
     display: block;
+  }
+
+  .slideshow {
+    flex-direction: column;
+    height: auto;
+    padding-top: 0px;
+  }
+
+  .slide {
+    order: 1;
+  }
+
+  .slideshow button {
+    order: 0;
+  }
+
+  .slideshow button:first-child{
+    translate: -25px 50%;
+  }
+
+  .slideshow button:last-child {
+    translate: 25px -50%;
   }
 }

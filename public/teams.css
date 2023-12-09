@@ -1,6 +1,7 @@
 section {
   width: 80vw;
   background-color: whitesmoke;
+  margin-top: var(--padding-amount);
   padding: var(--padding-amount);
   border-radius: var(--border-radius);
   display: flex;
@@ -22,7 +23,6 @@ section {
 
 .team-member {
   display: grid;
-  flex-direction: column;
   align-items: first baseline;
   justify-content: center;
   gap: 20px;
@@ -66,5 +66,34 @@ section {
 
   .team-role, .team-email {
     font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  section {
+    width: 60%;
+  }
+
+  .team-member-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+  .team-text {
+    display: none;
+  }
+
+  .team-member {
+    box-shadow: 2px 2px rgb(150, 150, 150);
+  }
+
+  .team-member:hover .team-text {
+    display: flex;
+  }
+
+  .team-email {
+    pointer-events: none;
   }
 }
