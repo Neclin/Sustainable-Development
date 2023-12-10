@@ -1,6 +1,5 @@
 .primary-data {
   display: flex;
-  align-items: top;
   justify-content: center;
   gap: 20px;
   padding: var(--padding-amount);
@@ -49,7 +48,7 @@
 
 .slideshow button:active {
   box-shadow: none;
-  translate: 2px 2px;
+  transform: translate(2px, 2px);
 }
 
 .slide {
@@ -65,10 +64,6 @@
   justify-content: center;
 
   padding: var(--padding-amount);
-}
-
-.slide h1 {
-  text-align: top;
 }
 
 .slide p {
@@ -146,7 +141,7 @@
   
   .slideshow button:active {
     box-shadow: none;
-    translate: 5px 5px;
+    transform: translate(5px, 5px);
   }
 }
 
@@ -207,10 +202,10 @@
   }
 
   .slideshow button:first-child{
-    translate: -25px 50%;
+    transform: translate(-25px, 50%);
   }
 
   .slideshow button:last-child {
-    translate: 25px -50%;
+    transform: translate(25px, -50%);
   }
 }
